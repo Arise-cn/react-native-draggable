@@ -3,13 +3,13 @@
  *
  */
 import React from 'react';
-import { GestureResponderEvent, PanResponderGestureState } from 'react-native';
+import { GestureResponderEvent, PanResponderGestureState,ImageSourcePropType } from 'react-native';
 export interface IDraggableProps {
     /**** props that should probably be removed in favor of "children" */
     renderText?: string;
     isCircle?: boolean;
     renderSize?: number;
-    imageSource?: number;
+    imageSource?: ImageSourcePropType;
     renderColor?: string;
     /**** */
     children?: React.ReactNode;
